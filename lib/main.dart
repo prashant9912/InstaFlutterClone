@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'body.dart';
 
 void main() => runApp(App());
 
@@ -114,7 +115,7 @@ class Home extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      
+                      Body()
                     ],
                   ),
                 ),
