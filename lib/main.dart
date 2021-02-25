@@ -97,7 +97,7 @@ class Home extends StatelessWidget {
                     children: [
                       Container(
                         padding: EdgeInsets.only(left: 20),
-                        child: Icon(Icons.add_box_outlined),
+                        child: Click(Icon(Icons.add_box_outlined)),
                       ),
                       Container(
                         padding: EdgeInsets.all(14),
@@ -106,7 +106,7 @@ class Home extends StatelessWidget {
                       ),
                       Container(
                         padding: EdgeInsets.only(right: 20),
-                        child: Icon(Icons.mail),
+                        child: Click(Icon(Icons.chat)),
                       )
                     ],
                   )),
