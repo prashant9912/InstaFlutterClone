@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/click.dart';
 import 'body.dart';
 
 void main() => runApp(App());
@@ -18,31 +19,31 @@ class App extends StatelessWidget {
 class Bottom extends StatelessWidget {
   const Bottom({Key key}) : super(key: key);
 
-  Widget click(Widget a) {
-    return Expanded(
-        flex: 1,
-        child: Center(
-          child: InkWell(
-              borderRadius: BorderRadius.circular(100),
-              onTap: () {},
-              child: Container(
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(100)),
-                  padding: EdgeInsets.all(12),
-                  child: a)),
-        ));
-  }
+  // Widget click(Widget a) {
+  //   return Expanded(
+  //       flex: 1,
+  //       child: Center(
+  //         child: InkWell(
+  //             borderRadius: BorderRadius.circular(100),
+  //             onTap: () {},
+  //             child: Container(
+  //                 decoration:
+  //                     BoxDecoration(borderRadius: BorderRadius.circular(100)),
+  //                 padding: EdgeInsets.all(12),
+  //                 child: a)),
+  //       ));
+  // }
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Row(
         children: [
-          click(Icon(Icons.home)),
-          click(Icon(Icons.search)),
-          click(Icon(Icons.add_circle_outline_sharp)),
-          click(Icon(Icons.favorite)),
-          click(Icon(Icons.person))
+          Click(Icon(Icons.home,size: 27,)),
+          Click(Icon(Icons.search,size: 27,)),
+          Click(Icon(Icons.add,size: 27,)),
+          Click(Icon(Icons.favorite,size: 27,)),
+          Click(Icon(Icons.person,size: 27,))
         ],
       ),
     );
